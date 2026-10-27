@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trapped Fire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="brand">TRAPPED FIRE</div>
+        <div class="stats">
+          <div><span>HP</span><strong id="healthValue">100</strong></div>
+          <div><span>AMMO</span><strong id="ammoValue">30 / 30</strong></div>
+          <div><span>KILLS</span><strong id="killsValue">0</strong></div>
+          <div><span>ZONE</span><strong id="zoneValue">100%</strong></div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="1280" height="720" aria-label="Trapped Fire game field"></canvas>
+
+      <div class="message-panel" id="messagePanel">
+        <h1>TRAPPED FIRE</h1>
+        <p>Outlast the arena. Survive the storm. Claim the drop.</p>
+        <button id="startButton">Start Mission</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
